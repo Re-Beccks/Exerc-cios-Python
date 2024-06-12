@@ -1,9 +1,43 @@
-
 from random import *
-jogador = int(input("Digite 1 ou 2: "))
-moeda = randint (1,2)
+from time import *
+#1 é cara, 2 é coroa
+vitoria = 0
+derrota = 0
 
-if moeda == jogador:
-    print("Você ganhou")
-else:
-    print("Você perdeu")
+
+system("cls")
+print("📦 Jogo cara ou coroa 📦")
+numeroPartidas = int(3)
+for i in range(numeroPartidas):
+
+    system("cls")
+    moeda = randint(1, 2)
+    print("📦 Jogo cara ou coroa 📦")
+    print("Criado por Rebecca")
+    jogador = int(input("Escolha \n 1-cara 🧑 \n 2-coroa 👑 \n"))
+   
+
+    if jogador == moeda:
+        print("venci, parça!"), system("color 20")
+        print("Aguarde...")
+        vitoria += 1
+        sleep(1)
+
+    else:
+        print("Perdeu, mermão"), system("color 40")
+        print("Aguarde...")
+        derrota +=1
+        sleep(1)
+
+print("Resultado da partida foi: ")
+print("Vitórias: ", vitoria)
+print("Derrotas: ", derrota)
+
+#1 vitoria, bronze. 2 vitórias, prata. 3 vitórias, ouro
+
+if vitoria == 1:
+    print("Você ganhou medalha de bronze! 🥉")
+if vitoria == 2:
+    print("Você ganhou medalha de prata! 🥈")
+if vitoria == 3:
+    print("Você ganhou medalha de ouro!🥇 ")
