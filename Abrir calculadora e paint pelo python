@@ -1,0 +1,8 @@
+from os import *
+
+opção = int(input("Digite aqui a opção: "))
+
+if opção == 1:
+    system("calc")    
+if opção == 2:
+    system("mspaint")1
