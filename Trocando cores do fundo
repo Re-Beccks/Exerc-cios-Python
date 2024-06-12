@@ -1,0 +1,12 @@
+from os import *
+
+
+system("cls")
+cor = (input("Digite a cor do fundo: "))
+cor = cor.replace(" ", "")
+
+if cor.lower () == "azul":
+    system("color 10")
+
+if cor.lower () == "vermelho" :
+    system("color 40")
