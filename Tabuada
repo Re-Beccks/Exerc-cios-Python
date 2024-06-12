@@ -1,0 +1,6 @@
+#Tabuada:
+numero = int(input("Digite o numero a ser calculado: "))
+
+
+for i in range (11):
+    print (i, "x", numero, "= ", i * numero)
