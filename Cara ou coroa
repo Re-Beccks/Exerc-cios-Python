@@ -1,0 +1,9 @@
+
+from random import *
+jogador = int(input("Digite 1 ou 2: "))
+moeda = randint (1,2)
+
+if moeda == jogador:
+    print("Você ganhou")
+else:
+    print("Você perdeu")
