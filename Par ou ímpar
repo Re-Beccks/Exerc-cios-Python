@@ -1,0 +1,26 @@
+# par ou impar usando o for
+
+from random import *
+for i in range(3):
+    jogador = int(input("Digite 1 ou 2: "))
+    moeda = randint (1,2)
+
+    if moeda == jogador:
+        print("Você ganhou")
+    else:
+            print("Você perdeu")
+
+from os import *
+
+for i in range(10):
+
+    nome = input("Digite seu nome: ")
+    numero = int( input("Digite um número: "))
+    
+    print("Bem vindo,", nome)
+    print("Você escolheu o número", numero)
+
+    if (numero % 2 ) == 0: #se a sobra do numero divisivel por 2 for igual a 0
+        print("Você escolheu um par")
+    else:
+        print("Você escolheu ímpar")
