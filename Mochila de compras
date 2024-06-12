@@ -1,0 +1,27 @@
+mochila = [ ]
+dinheiro = 200
+
+while True:
+    
+    item = input("Digite o item: ")
+    opcao = int(input("1 = comprar \n2 = vender \n"))
+        
+    
+    if opcao == 1:
+        if dinheiro > 0:
+            print("Coloque um item: ")
+            mochila.append(item)
+            dinheiro -= 5
+        else:
+            print("no money")
+    if opcao == 2:     
+        print("Venda um item da mochila: ", mochila)
+        mochila.remove(item)
+        dinheiro += 5
+        
+
+          
+    print(mochila)
+    
+    print("Itens dentro da mochila: ")
+    print("Seu saldo é: ", dinheiro)
